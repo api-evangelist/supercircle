@@ -1,8 +1,26 @@
 aid: supercircle
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/supercircle.png
 name: SuperCircle
-description: 'SuperCircle is a company surfaced as a portfolio company of foundry-group and added to the
-  API Evangelist network as a stub for enrichment. Sector: climate. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'SuperCircle (operated by MASC Inc.) is a technology and reverse-logistics
+  platform that helps retail and fashion brands run circular-economy programs for textiles.
+  It provides turnkey trade-in and resale programs that let consumers send worn clothing
+  back to brands for store credit, manages excess and overstock inventory through a
+  warehouse pickup and logistics network, and delivers real-time performance tracking
+  and customizable impact reporting on recycling and diversion outcomes. Brand partners
+  include Reformation, tentree, Parachute, A.L.C., and Subset. No public developer API,
+  documentation, or SDK surface was found at the time of enrichment; this profile is
+  a company lead in the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/supercircle/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Climate
+- Circular Economy
+- Reverse Logistics
+- Textile Recycling
+- Fashion
+- Sustainability
+- Resale
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/supercircle-domain-security.yml
 - type: Website
   url: https://www.supercircle.world
+- type: PrivacyPolicy
+  url: https://www.supercircle.world/privacy-policy
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
